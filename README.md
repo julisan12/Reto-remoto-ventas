@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Reto Remoto: landing de ventas interactiva
 
-# Run and deploy your AI Studio app
+Página de ventas responsiva para el lanzamiento de un reto formativo. Está construida con **React 19 + TypeScript**, con estilos de **Tailwind CSS 4** y animaciones de **Motion**.
 
-This contains everything you need to run your app locally.
+## Funcionalidades
 
-View your app in AI Studio: https://ai.studio/apps/fddaf39e-ed89-423f-83bf-bcbcb7453293
+- Página con varias secciones: hero, contenido del reto, precios, preguntas frecuentes y llamada a la acción final.
+- Planes de precios (Plan LATAM y Plan Premium) con un bono destacado.
+- Menú móvil y cambios de vista con transiciones animadas (`AnimatePresence`).
+- Diseño *mobile-first* totalmente responsivo.
+- Iconografía con `lucide-react`.
 
-## Run Locally
+## Stack
 
-**Prerequisites:**  Node.js
+| Área        | Tecnología                       |
+|-------------|----------------------------------|
+| UI          | React 19, TypeScript             |
+| Build       | Vite                             |
+| Estilos     | Tailwind CSS 4                   |
+| Animaciones | Motion (`motion/react`)          |
+| Iconos      | lucide-react                     |
 
+## Cómo ejecutarlo
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Requisito: Node.js 18 o superior.
+
+```bash
+npm install
+npm run dev        # http://localhost:3000
+```
+
+Otros scripts:
+
+```bash
+npm run build      # build de producción en dist/
+npm run preview    # sirve el build localmente
+npm run lint       # chequeo de tipos (tsc --noEmit)
+```
+
+## Estructura
+
+```
+src/
+├── App.tsx        # página completa y sus secciones
+├── main.tsx       # punto de entrada
+├── index.css      # Tailwind y estilos globales
+└── lib/utils.ts   # utilidades
+```
+
+## Autora
+
+Julieth Sánchez · [github.com/julisan12](https://github.com/julisan12)
